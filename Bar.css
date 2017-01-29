@@ -1,3 +1,12 @@
+/*
+Description: Slainte Website
+Author: Jamie Chu, Roseanna Chu
+Author URI: github.com/cjamie
+Tags: web design practice
+*/
+;
+*/
+
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
 
 @font-face {
@@ -115,12 +124,11 @@ nav ul li img {
 .button:active{
    /* when you press it */
    transform:translateY(5px);
-   text-decoration: underline;
+   text-decoration: overline;
 }
 .button0:active{
    /* when you press it */
    transform:translateY(0px);
-   text-decoration: overline;
 }
 .webBody{
     line-height:150%;
@@ -165,8 +173,8 @@ nav ul li img {
 */  
 text-overflow: ellipsis;
 border:DarkSlateGrey 1px solid;
-    width:60%;
-    min-width:500px;
+    min-width:60%;
+    width:500px;
     list-style-type:none;
 /*    display:flex;
     flex-flow:column wrap;
@@ -179,13 +187,16 @@ border:DarkSlateGrey 1px solid;
     background-color:silver;
     /*border-bottom:2px solid gray;*/
 }
-
+.home p {
+    padding-bottom:15px;    
+}
 .home article{
    /* background-color:green;*/
     padding:2%;
     min-width:300px;
     width:50%;
     margin:50px 50px;
+    text-align:left;
     border: 1px solid DarkSlateGrey;
 }
 
@@ -241,17 +252,24 @@ border:DarkSlateGrey 1px solid;
     flex-direction:column;
     overflow:hidden;
 }
-.sampleSet p{ /* side content*/
-    line-height:150%;
-    width:25%;
+.sampleSet ul{ /* side content*/
+  /*  width:25%;
     max-width:300px;
     min-height:100px;
     margin-top:20px;
-    background-color:#E1E6E8;
+    background-color:#E1E6E8;*/
+    width:25%;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-self: center;
+  overflow:hidden;
 }
+
+.sampleSet li:nth-child(odd){
+    background-color:grey;
+}
+
 
 .sampleSet section img{  /*960/720 for first image*/
 /*width:100%;*/
@@ -315,6 +333,10 @@ a {text-decoration: none;}
 */
 h3{
     clear: both;
+}
+.home h4{
+    font-size:20px;
+    font-weight:bold;
 }
 
 .home{
@@ -442,8 +464,7 @@ h3{
 /*    transform:scale(0.8);*/
    /* border-radius:2px;*/
  /*   opacity:0.8;*/
-    width:50%;
-    min-width:266px;
+    max-width:266px;
     transition: all 1s ease;
 /*    border:solid silver 3px;*/
 /*    min-width: 100%;*/
